@@ -1,0 +1,69 @@
+.lab {
+    box-sizing: border-box;
+
+    p {
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 300;
+        
+    }
+
+    .desc-lab {
+
+        h2 {
+            padding-top: 80px;
+        }
+    }
+
+    .lab-container {
+        padding-top: 40px;
+        display: grid;
+        width: 100%;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        box-sizing: border-box;
+
+        img {
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .col-1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            gap: 5px;
+        }
+
+        .col-2 {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            gap: 5px;
+
+        }
+
+        .col-3 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            gap: 5px;
+        }
+
+        .col-4 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            gap: 5px;
+        }
+
+    }
+
+}

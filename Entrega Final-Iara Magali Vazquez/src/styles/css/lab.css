@@ -1,0 +1,55 @@
+.lab {
+  box-sizing: border-box;
+}
+.lab p {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 300;
+}
+.lab .desc-lab h2 {
+  padding-top: 80px;
+}
+.lab .lab-container {
+  padding-top: 40px;
+  display: grid;
+  width: 100%;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  box-sizing: border-box;
+}
+.lab .lab-container img {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+}
+.lab .lab-container .col-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.lab .lab-container .col-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.lab .lab-container .col-3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.lab .lab-container .col-4 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+/*# sourceMappingURL=lab.css.map */
