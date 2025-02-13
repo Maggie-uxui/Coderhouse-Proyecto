@@ -1,0 +1,136 @@
+.hero {
+  padding-top: 120px;
+  padding-bottom: 56px;
+  font-size: 36px;
+  font-weight: 700;
+  text-wrap: balance;
+  margin: 0;
+}
+.hero .landing-span-animation {
+  animation: span-animation 2s ease forwards;
+  border-radius: 0.25rem;
+  padding: 0.1875rem;
+  background: linear-gradient(90deg, #6568e9, #9c5cef);
+  background-size: 0% 100%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+@keyframes span-animation {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+@media (width >= 768px) {
+  .hero {
+    padding-block: 129px;
+    padding-top: 200px;
+  }
+}
+.hero h1 {
+  margin: auto;
+}
+.hero strong {
+  color: var(--text-color);
+  font-weight: 500;
+}
+.hero p {
+  font-size: 1.25rem;
+  color: var(--text-description-color);
+  font-weight: 200;
+  line-height: 1.5;
+}
+.hero .card {
+  position: relative;
+  margin-inline: auto;
+  text-align: center;
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: 120px 29px;
+  overflow: hidden;
+  background-color: color-mix(in srgb, var(--bg-color), transparent 30%);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  justify-items: center;
+}
+.hero .card .button-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  align-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.hero .card .button-container .button-2 a {
+  display: flex;
+  gap: 8px;
+}
+@media (width >= 768px) {
+  .hero .card .button-container {
+    flex-direction: row;
+  }
+}
+.hero .card .badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-inline: auto;
+  background-color: var(--bg-color);
+  font-size: 14px;
+  padding: 6px 12px;
+  border: var(--border);
+  border-radius: 1000px;
+  transition: var(--transition-bg), var(--transition-border);
+  font-weight: 300;
+}
+.hero .card .badge .dot {
+  transition: var(--transition-bg), var(--transition-border);
+  --size: 6px;
+  --color: #22c55e;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--color);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 var(--color);
+  transform: scale(1);
+  animation: pulse 3s infinite;
+}
+.hero .card .badge .dot .landing-span-animation {
+  animation: span-animation 2s ease forwards;
+  border-radius: 0.25rem;
+  padding: 0.1875rem;
+  background: linear-gradient(90deg, #6568e9, #9c5cef);
+  background-size: 0% 100%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 var(--color);
+  }
+  70% {
+    transform: scale(1.5);
+    box-shadow: 0 0 5px 5px rgba(34, 197, 94, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+@keyframes span-animation {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+/*# sourceMappingURL=hero.css.map */

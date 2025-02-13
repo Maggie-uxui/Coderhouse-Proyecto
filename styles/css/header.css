@@ -1,0 +1,117 @@
+.nav-container {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.nav-container .scrolled {
+  transform: translateY(100%);
+}
+@media (width <= 768px) {
+  .nav-container #menu {
+    padding-block: 16px;
+    padding-inline: var(--mobile-inline-padding);
+    text-align: right;
+    justify-content: center;
+    backdrop-filter: blur(12px);
+    position: sticky;
+  }
+  .nav-container #menu .navbar {
+    display: none;
+  }
+}
+
+#menu-dialog {
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: rgba(25, 4, 39, 0.171);
+  backdrop-filter: blur(20px);
+  width: 70vw;
+  margin: auto;
+  padding: 16px;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#menu-dialog .dialog {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  text-align: center;
+  color: var(--text-color);
+}
+#menu-dialog .dialog li {
+  list-style: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+#menu-dialog .dialog a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+dialog::backdrop {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  backdrop-filter: blur(4px);
+  transition: background-color 0.3s ease;
+}
+
+dialog:not([open])::backdrop {
+  background-color: hsla(0, 0%, 0%, 0);
+}
+
+#menu-dialog.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (width >= 769px) {
+  #menu {
+    padding-block: 5px;
+    background: none;
+    backdrop-filter: none;
+    padding: 0;
+    top: 36px;
+    text-align: initial;
+    margin: 36px auto 0;
+  }
+  #menu-button {
+    display: none;
+  }
+  .navbar {
+    margin: 36px auto 0;
+    display: flex;
+    gap: 35px;
+    padding: 20px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5215686275);
+    border-radius: 36px;
+    width: fit-content;
+    backdrop-filter: blur(12px);
+    justify-content: space-around;
+    background-color: color-mix(in srgb, var(--bg-color), transparent 30%);
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  }
+  .navbar a:hover {
+    text-shadow: #ffffff 0px 0px 20px;
+  }
+  .navbar a:last-child + .separator {
+    display: none;
+  }
+  .separator {
+    color: #ffffff;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

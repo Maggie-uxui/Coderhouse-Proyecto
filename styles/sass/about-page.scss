@@ -1,0 +1,124 @@
+.grid{
+    gap: 1rem 1.5rem;
+}
+.card-skill {
+    grid-row: 7 / 7;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    padding: 28px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: flex-start;
+    &:hover {
+        background-color: rgb(49, 5, 66);
+        transition-property: background-color;
+        box-shadow: 0px 0px 21.3px 0px #ffffff;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .description {
+        padding: 15px;
+        ul {
+            font-size: 18px;
+
+            li {
+                margin-bottom: 20px;
+                font-style: italic;
+
+                strong {
+                    font-size: 24px;
+
+                    font-style: normal;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 30px;
+
+
+        }
+    }
+}
+.card-soft {
+    grid-row: 8 / 8;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    padding: 28px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: flex-start;
+    &:hover {
+        background-color: rgb(49, 5, 66);
+        transition-property: background-color;
+        box-shadow: 0px 0px 21.3px 0px #ffffff;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .description {
+        padding: 15px;
+        ul {
+            font-size: 20px;
+            li {
+                margin-bottom: 20px;
+                font-style: italic;
+            }
+        }
+
+        h2 {
+            font-size: 30px;
+
+
+        }
+    }
+}
+.card-about {
+    grid-row: 9 / 9;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    padding: 28px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: flex-start;
+    &:hover {
+        background-color: rgb(49, 5, 66);
+        transition-property: background-color;
+        box-shadow: 0px 0px 21.3px 0px #ffffff;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .description {
+        padding: 15px;
+        p{
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+
+
+        }
+    }
+}
