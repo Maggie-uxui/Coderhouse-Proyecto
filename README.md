@@ -20,7 +20,7 @@ Bienvenido a mi portfolio personal, un sitio web que destaca mis habilidades y p
 - Animaciones y transiciones visuales para mejorar la experiencia del usuario.
 ## 🌐 Demo
 Puedes ver el sitio en vivo aquí: 
-### https://uxmagalivazquez.vercel.app/
+### https://uxmagalivazquez.vercel.app
 
 
 ![portafolio](https://github.com/user-attachments/assets/4d22d886-0113-4847-b536-8eb7dcafb8aa)
