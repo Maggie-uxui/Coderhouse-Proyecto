@@ -1,0 +1,330 @@
+@media (width <=768px) {
+    #menu {
+        padding-block: 16px;
+        padding-inline: var(--mobile-inline-padding);
+        text-align: right;
+        justify-content: center;
+        backdrop-filter: blur(12px);
+        position: sticky;
+
+        .navbar {
+            display: none;
+        }
+    }
+
+
+}
+
+@media (width >=426px) {
+    .grid {
+        a {
+            grid-area: 4/1/4/4;
+        }
+
+        p {
+            grid-area: 4 / 8 / 5 / 13;
+            align-self: center;
+            grid-column-start: 8;
+        }
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .layout {
+        grid-area: 6 / 1 / 7 / 13;
+
+        .card-proyect {
+            overflow: visible;
+        }
+    }
+
+    #card-1 {
+        grid-area: 1 / 1 / 2 / 9;
+        align-self: end;
+
+    }
+
+    #card-2 {
+        grid-area: 1 / 9 / 2 / 13;
+        align-self: end;
+
+    }
+
+    #card-3 {
+        grid-area: 2 / 1 / 3 / 7;
+
+
+
+    }
+
+    #card-4 {
+        grid-area: 2 / 7 / 3 / 13;
+        align-self: flex-start;
+
+
+    }
+
+    .layout {
+        .card-proyect-2 {
+            grid-column-end: 3;
+            width: 350px;
+        }
+
+        .estudios {
+            grid-area: 1 / 9 / 2 / 21;
+            grid-row: 1 / 1;
+            grid-column-start: 8;
+
+            .after {
+
+
+
+                .info {
+                    padding-top: 2.5rem;
+                    padding-bottom: 2.5rem;
+
+                    .year {
+                        justify-content: space-around;
+                    }
+
+                    h3 {
+                        white-space: nowrap;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width >=769px) {
+    #menu {
+        padding-block: 5px;
+        background: none;
+        backdrop-filter: none;
+        padding: 0;
+        top: 36px;
+        text-align: initial;
+        margin: 36px auto 0;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    .navbar {
+        margin: 36px auto 0;
+        display: flex;
+        gap: 35px;
+        padding: 20px 30px;
+        border: 1px solid #ffffff85;
+        border-radius: 36px;
+        width: fit-content;
+        backdrop-filter: blur(12px);
+        justify-content: space-around;
+        background-color: color-mix(in srgb, var(--bg-color), transparent 30%);
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        a:last-child+.separator {
+            display: none;
+        }
+    }
+
+    .separator {
+        color: #ffffff;
+        font-size: 16px;
+    }
+
+    .button-container {
+        flex-direction: row;
+    }
+
+    .contact {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        display: grid;
+
+        .contact-container {
+            .touch {
+                img {
+                    width: 340px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-container {
+            footer {
+
+                .footer-links {
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 1rem;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+
+                    .footer-links-wrapper {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        gap: 1rem;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+
+    .project-main {
+
+        .project-container {
+
+            .project-item {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                .carousel-container {
+                    width: 60%;
+
+
+                }
+            }
+
+            .top-info {
+                display: flex;
+                align-items: center;
+
+                h4 {
+                    font-size: 40px;
+                }
+
+                .badge {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        a {
+            .button-2 {
+                font-size: 17px;
+                padding: 18px 60px;
+                height: 50px;
+            }
+        }
+    }
+
+    .lab {
+
+        .desc-lab {
+            p {
+                width: 50%;
+            }
+
+            h2 {
+                padding-top: 200px;
+            }
+        }
+
+        .lab-container {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .col-1 {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 5px;
+                justify-content: flex-start;
+            }
+
+            .col-2 {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 5px;
+                justify-content: flex-start;
+            }
+
+            .col-3 {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 5px;
+                justify-content: flex-start;
+            }
+
+            .col-4 {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 5px;
+                justify-content: flex-start;
+            }
+
+        }
+
+    }
+
+    .card-skill {
+        grid-row: 7 / 7;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .card-soft {
+        grid-row: 7 / 7;
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
+
+    .card-about {
+        grid-row: 7 / 7;
+        grid-column-start: 9;
+        grid-column-end: 13;
+    }
+
+    .contact-page {
+        padding-left: 50px;
+        padding-right: 50px;
+        .contact-container{
+            p{
+                font-size: 1.3rem;
+            }
+        }
+        .sendMsg {
+            .form {
+                form input,
+                form textarea{
+                    padding: 1.5rem;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .layout {
+        .estudios {
+            grid-area: 1 / 9 / 2 / 21;
+            grid-row: 1 / 1;
+            grid-column-start: 13;
+        }
+    }
+}

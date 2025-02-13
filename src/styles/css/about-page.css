@@ -1,0 +1,117 @@
+.grid {
+  gap: 1rem 1.5rem;
+}
+
+.card-skill {
+  grid-row: 7/7;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  padding: 28px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: flex-start;
+}
+.card-skill:hover {
+  background-color: rgb(49, 5, 66);
+  transition-property: background-color;
+  box-shadow: 0px 0px 21.3px 0px #ffffff;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.card-skill .description {
+  padding: 15px;
+}
+.card-skill .description ul {
+  font-size: 18px;
+}
+.card-skill .description ul li {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.card-skill .description ul li strong {
+  font-size: 24px;
+  font-style: normal;
+}
+.card-skill .description h2 {
+  font-size: 30px;
+}
+
+.card-soft {
+  grid-row: 8/8;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  padding: 28px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: flex-start;
+}
+.card-soft:hover {
+  background-color: rgb(49, 5, 66);
+  transition-property: background-color;
+  box-shadow: 0px 0px 21.3px 0px #ffffff;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.card-soft .description {
+  padding: 15px;
+}
+.card-soft .description ul {
+  font-size: 20px;
+}
+.card-soft .description ul li {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.card-soft .description h2 {
+  font-size: 30px;
+}
+
+.card-about {
+  grid-row: 9/9;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  padding: 28px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: flex-start;
+}
+.card-about:hover {
+  background-color: rgb(49, 5, 66);
+  transition-property: background-color;
+  box-shadow: 0px 0px 21.3px 0px #ffffff;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.card-about .description {
+  padding: 15px;
+}
+.card-about .description p {
+  padding-top: 20px;
+  font-size: 20px;
+}
+.card-about .description h2 {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=about-page.css.map */
