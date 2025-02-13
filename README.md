@@ -23,7 +23,8 @@ Puedes ver el sitio en vivo aquí:
 ### https://uxmagalivazquez.vercel.app/
 
 
-![portafolio](https://github.com/user-attachments/assets/2d062e50-2c2a-4729-93b1-c454db4df673)
+![portafolio](https://github.com/user-attachments/assets/4d22d886-0113-4847-b536-8eb7dcafb8aa)
+
 
 
 ## 📧 Contacto
